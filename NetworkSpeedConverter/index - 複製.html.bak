@@ -126,7 +126,7 @@
 		  flex: 1;
 		}
 	</style>
-	<!-- <script type="text/babel">
+	<script type="text/babel">
 
 		const UnitControl = () => (
 		  <div className="unit-control">
@@ -223,13 +223,11 @@
 
 		ReactDOM.render(<SpeedConverter />, document.getElementById("root"));
 
-	</script> -->
-	
+	</script>
 </head>
 
 <body>
 	<div id="root"></div>
-	<script type="text/babel" src="SpeedConverter.jsx"></script>
 </body>
 
 </html>
