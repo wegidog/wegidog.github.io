@@ -6,8 +6,8 @@ class I18nManager {
   }
 
   loadTranslations() {
-    const enTranslationsPromise = fetch("en.json").then(response => response.json());
-    const zhTranslationsPromise = fetch("zh.json").then(response => response.json());
+    const enTranslationsPromise = fetch("en-US.json").then(response => response.json());
+    const zhTranslationsPromise = fetch("zh-TW.json").then(response => response.json());
     Promise.all([enTranslationsPromise, zhTranslationsPromise]).then(([enTranslations, zhTranslations]) => {
       this.translations.en = enTranslations;
       this.translations.zh = zhTranslations;
