@@ -1,0 +1,1104 @@
+{
+  "header": {
+    "cryoManagement": {
+      "cryoManagement": "Freezing Management",
+      "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+      "spermTank": "Sperm Tank"
+    },
+    "input": {
+      "search": {
+        "placeholder": "Input chart number"
+      }
+    },
+    "systemManagement": {
+      "user": "User",
+      "userGroup": "User Group",
+      "defineOocyteEmbryoTank": "Define Oocyte and Embryo Tank",
+      "addOocyteEmbryoTank": "Add Oocyte and Embryo Tank",
+      "defineSpermTank": "Define Sperm Tank",
+      "addSpermTank": "Add Sperm Tank",
+      "systemManagement": "System",
+      "optionManagement": "Option Management"
+    },
+    "patientInfo": {
+      "patientProfile": "Patient Profile",
+      "patientInfo": "Patient Info"
+    },
+    "embryoCulture": {
+      "artWorksheet": "ART Worksheet",
+      "embryoCulture": "Embryo Culture"
+    }
+  },
+  "button": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "retry": "Retry",
+    "login": "Login",
+    "logout": "Logout",
+    "search": "Search"
+  },
+  "formSelect": {
+    "placeholder": "Select an option"
+  },
+  "systemManagement": {
+    "addOocyteEmbryoTank": {
+      "addOocyteEmbryoTank": "Add Oocyte And Embryo Tank",
+      "addTank": "Add",
+      "message": {
+        "confirmOocyteEmbryoTankDelete": "Are you sure you want to delete the Oocyte And Embryo Tank ?"
+      },
+      "form":{
+        "oocyteEmbryoTank":"Oocyte and Embryo Tank",
+        "tankName": "Name",
+        "oocyteEmbryoTankModel" : "Model"
+      }
+    },
+    "defineOocyteEmbryoTank": {
+      "defineOocyteEmbryoTank": "Define Oocyte And Embryo Tank",
+      "name": "Name",
+      "tankNumber": "Tank Number",
+      "action": "Action",
+      "input": {
+        "search": {
+          "placeholder": "Input name"
+        }
+      },
+      "message": {
+        "confirmOocyteEmbryoTankModelDelete": "Are you sure you want to delete the Oocyte And Embryo Tank Model ?"
+      },
+      "form":{
+        "oocyteEmbryoTankModel": "Oocyte And Embryo Tank Model",
+        "name": "Name",
+        "floor": "Floor",
+        "zone": "Zone",
+        "cryotopContainer": "Cryotop Container",
+        "cryotopContainerCapacity": "Cryotop Container Capacity",
+        "zoneNickName": "Zone Nickname",
+        "cryotopContainerNickName": "Cryotop Container Nickname",
+        "cryotopNickName": "Cryotop Nickname",
+        "memoClickEdit": "click and edit <display name>、",
+        "memo": "(*) is child node's number",
+        "tip": {
+          "zone": "How many zones in each floor",
+          "cryotopContainer": "How many cryotopContainers in each zone",
+          "cryotopContainerCapacity": "How many cryotops in each cryotopContainer"
+        }
+      }
+    },
+    "user": {
+      "account": "Account",
+      "name": "Name",
+      "action": "Action",
+      "input": {
+        "search": {
+          "placeholder": "Input account or name"
+        }
+      },
+      "form": {
+        "user": "使用者",
+        "account": "Account",
+        "name": "Name",
+        "password": "Password",
+        "email": "E-mail",
+        "message": {
+          "passwordPlaceholder": "Input new password if you want to change."
+        },
+        "hidden": "Hidden"
+      },
+      "userGroup": {
+        "userGroup": "User Group",
+        "account": "Account",
+        "name": "Name",
+        "email": "E-mail",
+        "password": "Password",
+        "description": "Description",
+        "allGroups": "All Groups",
+        "belongingGroups": "Belonging Groups",
+        "userGroupName": "Name"
+      },
+      "message": {
+        "confirmUserDelete": "Are you sure you want to delete user \"{{account}}\" ?"
+      },
+      "user": "User"
+    },
+    "userGroup": {
+      "action": "Action",
+      "input": {
+        "search": {
+          "placeholder": "Input name or description"
+        }
+      },
+      "create": {
+        "description": "Description",
+        "userGroupCreate": "Create User Group",
+        "userGroupEdit": "Edit User Group",
+        "groupName": "Group Name"
+      },
+      "description": "Description",
+      "userGroupName": "Name",
+      "message": {
+        "confirmUserGroupDelete": "Are you sure you want to delete user group \"{{name}}\" ?"
+      },
+      "userGroup": "User Group"
+    }
+  },
+  "patientInfo": {
+    "patientProfile": {
+      "name": "Name",
+      "action": "Action",
+      "input": {
+        "search": {
+          "placeholder": "Input chart number"
+        }
+      },
+      "dateOfBirth": "Date of Birth",
+      "sex": "Sex",
+      "chartNumber": "Chart Number",
+      "message": {
+        "confirmPatientProfileDelete": "Are you sure you want to delete patient profile \"{{chartNumber}} {{name}}\" ?"
+      },
+      "detail": {
+        "patientProfile": {
+          "name": "Name",
+          "chartNumber": "Chart Number",
+          "dateOfBirth": "Date of Birth",
+          "sex": "Sex",
+          "patientProfile": "Patient Profile",
+          "age": "({{age}} years old)",
+          "noData": "No Data"
+        },
+        "maritalRelationship": {
+          "maritalRelationship": "Marital Relationship",
+          "message": {
+            "confirmMaritalRelationshipDelete": "Are you sure you want to delete the marital relationship between \"{{spouseChartNumber}} {{spouseName}}\" with \"{{patientChartNumber}} {{patientName}}\" ?",
+            "confirmMaritalRelationshipUpdate": "Are you sure you want to set \"{{spouseChartNumber}} {{spouseName}}\" as the current spouse of \"{{patientChartNumber}} {{patientName}}\" ?"
+          },
+          "currentSpouse": "Current Spouse",
+          "chartNumber": "Chart Number",
+          "dateOfBirth": "Date of Birth",
+          "sex": "Sex",
+          "name": "Name",
+          "action": "Action",
+          "setAsCurrentSpouse": "Set as Current Spouse"
+        },
+        "artWorksheet": {
+          "artWorksheet": "ART Worksheet",
+          "artWorksheetNo": "ART Worksheet NO.",
+          "startDate": "Start Date",
+          "doctor": "Doctor",
+          "treatmentPurpose": "Treatment Purpose",
+          "action": "Action",
+          "treatmentType": "Treatment Type",
+          "message": {
+            "confirmArtWorksheetDelete": "Are you sure you want to delete the ART worksheet \"NO. {{artWorksheetNo}}\" ?"
+          }
+        },
+        "cryoContract": {
+          "cryoContract": "Cryo-Contract"
+        },
+        "inStorageOocytesAndEmbryos": {
+          "inStorageOocytesAndEmbryos": "In-Storage Oocytes and Embryos"
+        },
+        "treatmentPlan": {
+          "treatmentPlan": "Treatment Plan"
+        },
+        "message": {
+          "confirmArtWorksheetDelete": "Are you sure you want to delete the ART worksheet \"NO. {{artWorksheetNo}}\" ?"
+        },
+        "oocyteList": {
+          "oocyteList": "Oocyte List",
+          "oocyteNo": "Oocyte NO",
+          "status": "Status",
+          "day": "Day (Newest)",
+          "stage": "Stage (Newest)",
+          "classification": "Classification (Newest)",
+          "opuDateTime": "OPU Date and Time",
+          "source": "Source"
+        },
+        "embryoList": {
+          "embryoList": "Embryo List",
+          "embryoNo": "Embryo NO",
+          "status": "Status",
+          "day": "Day (Newest)",
+          "stage": "Stage (Newest)",
+          "classification": "Classification (Newest)",
+          "examinationResult": "PGS Result (Newest)",
+          "inseminationProcedure": "Insemination Procedure",
+          "inseminationDateTime": "Insemination Date and Time",
+          "oocyteSource": "Source (Oocyte)",
+          "spermSource": "Source (Sperm)"
+        },
+        "spermList": {
+          "spermList": "Sperm List",
+          "spermNo": "Sperm NO",
+          "status": "Status",
+          "spuDateTime": "SPU Date and Time",
+          "source": "Source",
+          "owner": "Owner"
+        },
+        "systemImportRecord": {
+          "systemImportRecord": "System Import Record",
+          "importDateTime": "Import Date and Time",
+          "importEmbryo": "Import Embryo",
+          "importOocyte": "Import Oocyte",
+          "importSperm": "Import Sperm",
+          "action": "Act",
+          "detail": "Detail",
+          "message": {
+            "confirmSystemImportRecordDelete": "Are you sure you want to delete the System Import Record ?"
+          }
+        },
+        "systemExportRecord": {
+          "systemExportRecord": "System Export Record",
+          "action": "Act",
+          "detail": "Detail",
+          "exportDateTime": "Export Date and Time",
+          "reasonForExportFromSystem": "Reason for Export from System",
+          "exportEmbryo": "Export Embryo",
+          "exportOocyte": "Export Oocyte",
+          "exportVial": "Export Vial",
+          "message": {
+            "confirmSystemExportRecordDelete": "Are you sure you want to delete the System Export Record ?"
+          }
+        },
+        "donorRecipientRecord": {
+          "donorRecipientRecord": "Donor/Recipient Record",
+          "action": "Action",
+          "detail": "Detail",
+          "donationDateTime": "Donation Date and Time",
+          "recipient": "Recipient",
+          "donateOocyte": "Donate Oocyte",
+          "donateSperm": "Donate Sperm",
+          "donateEmbryo": "Donate Embryo"
+        },
+        "semenAnalysisAndPreparationRecord": {
+          "semenAnalysisAndPreparationRecord": "Semen Analysis and Preparation Records",
+          "examinationDateAndTime": "Examination Date and Time",
+          "preparationDateAndTime": "Preparation Date and Time",
+          "owner": "Owne",
+          "detailContent": "Detail",
+          "source": "Source",
+          "spuDateTime": "SPU Date and Time: {{spuDateTime}}",
+          "importDateTime": "Import Date and Time: {{importDateTime}}",
+          "importFromOtherInstitution": "Import from Other Institution"
+        }
+      },
+      "patientProfile": "Patient Profile",
+      "form": {
+        "name": "Name",
+        "message": {
+          "passwordPlaceholder": "Input new password if you want to change."
+        },
+        "chartNumber": "Chart Number",
+        "sex": "Sex",
+        "dateOfBirth": "Date of Birth",
+        "patientProfile": "Patient Profile"
+      }
+    },
+    "maritalRelationship": {
+      "chartNumber": "Chart Number",
+      "currentSpouse": "Current Spouse",
+      "input": {
+        "radio": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "spouseCreate": "Create Spouse"
+    }
+  },
+  "embryoCulture": {
+    "artWorksheet": {
+      "detail": {
+        "artWorksheet": {
+          "artWorksheetNo": "ART Worksheet NO.",
+          "treatmentPurpose": "Treatment Purpose",
+          "treatmentType": "Treatment Type",
+          "cycleType": "Cycle Type",
+          "doctor": "Doctor",
+          "institution": "Institution",
+          "startedBy": "Started By",
+          "endedBy": "Ended By",
+          "startDate": "Start Date",
+          "endDate": "End Date",
+          "outcome": "Outcome",
+          "note": "Note",
+          "treatmentPlanNo": "Treatment Plan NO.",
+          "artWorksheet": "ART Worksheet"
+        },
+        "summary": {
+          "summary": "Summary",
+          "numbers": "Numbers",
+          "ova": "Ova",
+          "thawed": "Thawed",
+          "transferred": "Transferred",
+          "stored": "Stored",
+          "storedMii": "Stored (Oocyte)",
+          "storedEmbryo": "Stored (Embryo)",
+          "insemination": "Insemination",
+          "inseminated": "Inseminated",
+          "ivf": "IVF",
+          "icsi": "ICSI",
+          "imsi": "IMSI",
+          "others": "Others",
+          "kpis": "KPIs",
+          "oocyteRetrievalRate": "Oocyte Retrieval Rate",
+          "maturationRate": "Maturation Rate",
+          "fr": "FR",
+          "ger": "GER",
+          "br": "BR",
+          "gbr": "GBR",
+          "survivalRate": "Survival rate",
+          "tips": {
+            "ova": "OPU record：the sum of OPU numbers",
+            "thawed": "Oocyte and embryo thawing record：the sum of selecting cryotop cell numbers",
+            "transferred": "Embryo transfer record：the sum of selecting embryo numbers",
+            "stored": "Oocyte and embryo cryo record：the sum of selecting oocyte and embryo numbers",
+            "storedMii": "Oocyte and embryo cryo record：the sum of selecting oocyte numbers",
+            "storedEmbryo": "Oocyte and embryo cryo record：the sum of selecting embryo numbers",
+            "inseminated": "The number of meet the criterias embryo from insemination record produce \n\n *all observation records of embryo(or oocyte), newest stage=[insemination] \n (Day=D0 & previous observation record classification != GV|NG oocyte) | \n (Day=D1 & previous observation record classification != MI|GV|NG oocyte)",
+            "ivf": "Numerator：the number of D0 newest insemination procedure is 'Standard'* from embryo of inseminated \n Denominator：inseminated \n\n *D0 Embryo Standard Insemination Procedure \n Embryo|Oocyte observation record, the latest observation date and time of Day=D0 & Stage=insemination \n relation embryo > oocyte observation record same day(closest time)insemination record(insemination date and time), insemination procedure=Starndard",
+            "icsi": "Numerator：the number of D0 newest insemination procedure is 'ICSI'* from embryo of inseminated \n Denominator：inseminated \n\n *D0 Embryo Standard Insemination Procedure \n Embryo|Oocyte observation record, the latest observation date and time of Day=D0 & Stage=insemination \n relation embryo > oocyte observation record same day(closest time)insemination record(insemination date and time), insemination procedure=ICSI",
+            "imsi": "Numerator：the number of D0 newest insemination procedure is 'IMSI'* from embryo of inseminated \n Denominator：inseminated \n\n *D0 Embryo Standard Insemination Procedure \n Embryo|Oocyte observation record, the latest observation date and time of Day=D0 & Stage=insemination \n relation embryo > oocyte observation record same day(closest time)insemination record(insemination date and time), insemination procedure=IMSI",
+            "others": "Numerator：the number of D0 newest insemination procedure is 'Others'* from embryo of inseminated \n Denominator：inseminated \n\n *D0 Embryo Standard Insemination Procedure \n Embryo|Oocyte observation record, the latest observation date and time of Day=D0 & Stage=insemination \n relation embryo > oocyte observation record same day(closest time)insemination record(insemination date and time), insemination procedure=Others",
+            "oocyteRetrievalRate": "Numerator：the number of add oocyte from OPU record \n Denominator：Follicle number(left)+Follicle number(right) from OPU record",
+            "maturationRate": "Numerator：the number of Day=D0 & classification=MII from observation record​ \n Denominator：the number of add oocyte from OPU record",
+            "fr": "Numerator(normal inseminated)：the number of fertilization check=+ of embryo inseminated from observation record \n Denominator：inseminated \n\n *Embryo(or Oocyte) \n 1.There are multiple observation records(Stage=insemination) & the first insemination record(insemination procedure!=Standard) \n between the second observation record have observation record(ex.NPN), get these record:the latest observation record fertilization check=+ \n 2.the other latest observation record fertilization check=+",
+            "ger": "Numerator：the number of (classification=8II|Comp|Morula) | (classification(handwriting)=nI|nII, n>=6) before D3 12:00 observation record of FR's numerator \n Denominator(normal inseminated)：the numerator of FR",
+            "br": "Numerator：the number of (classification=EB|Blastocyst|5BB|5BC) | (classification(handwriting)=nXX, n is any number, X is any english alphabe) before D5 12:00 observation record of FR's numerator \n Denominator(normal inseminated)：the numerator of FR",
+            "gbr": "Numerator：the number of embryo of FR's numerator from all observation record \n ( \n (Day=D5, Stage=cryo) | \n (Day=D5, Stage=transfer) | \n (Day=D6, Stage=cryo) | \n (Day=D6, Stage=transfer) \n ) & \n !(Day=D7, Stage=cryo) & \n !(Day=D7, Stage=transfer) & \n newest observation record fertilization check=+ & \n classification(handwriting)=no - (ex, 4CC-) & not nCX (n is any number, X is any english alphabet) \n Denominator(normal inseminated)：the numerator of FR",
+            "survivalRate": "Numerator：the number of Stage=thaw & classification!=DG of observation record from oocyte and embryo thawing record \n Denominator：the number of cells from thawing record"
+          }
+        },
+        "inseminationRecord": {
+          "inseminationRecord" : "Insemination Record",
+          "inseminationDateTime": "Insemination Date and Time",
+          "oocyteNumbers": "Oocyte Numbers",
+          "inseminationProcedure": "Insemination Procedure",
+          "embryologist": "Embryologist",
+          "action": "Action",
+          "detailContent": "Detail",
+          "message": {
+            "confirmInseminationRecordDelete": "Are you sure you want to delete the insemination record ?"
+          }
+        },
+        "oocyteList": {
+          "oocyteList": "Oocyte List",
+          "oocyteNo": "Oocyte NO",
+          "status": "status",
+          "day": "Day (Newest)",
+          "stage": "Stage (Newest)",
+          "classification": "Classification (Newest)",
+          "opuDateTime": "OPU Date and Time",
+          "source": "Source"
+        },
+        "embryoList": {
+          "embryoList": "Embryo List",
+          "embryoNo": "Embryo NO",
+          "status": "status",
+          "day": "Day (Newest)",
+          "stage": "Stage (Newest)",
+          "classification": "Classification (Newest)",
+          "examinationResult": "PGS result (Newest)",
+          "inseminationProcedure": "Insemination procedure",
+          "inseminationDateTime": "Insemination date and time",
+          "oocyteSource": "Source (Oocyte)",
+          "spermSource": "Source (Sperm)"
+        },
+        "spermList": {
+          "spermList": "Sperm List",
+          "spermNo": "Sperm NO",
+          "status": "status",
+          "spuDateTime": "SPU Date and Time",
+          "source": "Source",
+          "owner": "Owner"
+        },
+        "observationRecord": {
+          "observationRecord": "Observation Record",
+          "oocyteNoAndEmbryoNo": "Oocyte No/Embryo No",
+          "observationDateTime": "Observation Date and Time",
+          "day": "Day (Newest)",
+          "stage": "Stage (Newest)",
+          "classification": "Classification (Newest)",
+          "detailContent": "Detail"
+        },
+        "oocyteEmbryoCryoRecord": {
+          "oocyteEmbryoCryoRecord": "Oocyte And Embryo Cryo Record",
+          "cryoDateTime": "Cryo Date and Time",
+          "cryotopNo": "Cryotop No",
+          "cryotopColor": "Cryotop Color",
+          "cellCounts": "Cell Counts",
+          "embryologist": "Embryologist",
+          "printLabel": "Print Label",
+          "action": "Action",
+          "detailContent": "Detail",
+          "message": {
+            "confirmOocyteEmbryoCryoRecordDelete": "Are you sure you want to delete the oocyte and embryo cryo record ?"
+          }
+        },
+        "oocyteEmbryoRelocationRecord": {
+          "oocyteEmbryoRelocationRecord": "Oocyte and Embryo Tank Relocation Record",
+          "relocationDate": "Relocation Date",
+          "embryologist": "Embryologist",
+          "action": "Action",
+          "detailContent": "Detail"
+        },
+        "oocyteEmbryoRemovalRecord": {
+          "oocyteEmbryoRemovalRecord": "Oocyte and Embryo Tank Removal Record",
+          "removalDate": "Removal Date",
+          "embryologist": "Embryologist",
+          "action": "Action",
+          "detailContent": "Detail"
+        },
+        "oocyteEmbryoStorageRecord": {
+          "oocyteEmbryoStorageRecord": "Oocyte And Embryo Tank Storage Record",
+          "storageDate": "Storage Date",
+          "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "embryologist": "Embryologist",
+          "action": "Action",
+          "detailContent": "Detail"
+        },
+        "oocyteEmbryoThawingRecord": {
+          "oocyteEmbryoThawingRecord": "Oocyte and Embryo Thawing Record",
+          "thawingDateTime": "Thawing Date and Time",
+          "embryologist": "Embryologist",
+          "action": "Action",
+          "detailContent": "Detail",
+          "message": {
+            "confirmOocyteEmbryoThawingRecordDelete": "Are you sure you want to delete the oocyte and embryo thawing record ?"
+          }
+        },
+        "opuRecord": {
+          "opuRecord": "OPU Record",
+          "opuDateTime": "OPU Date and Time",
+          "oocyteCounts": "Oocyte Counts",
+          "doctor": "Doctor",
+          "action": "Action",
+          "message": {
+            "confirmOpuRecordDelete": "Are you sure you want to delete the OPU record \"OPU \n Date and Time: {{opuDateTime}}/Oocyte counts: {{oocyteCounts}}\" ?"
+          },
+          "detailContent": "Detail"
+        },
+        "spuRecord": {
+          "spuRecord": "SPU Record",
+          "spermNumber": "Sperm NO.",
+          "spuDateAndTime": "SPU Date and Time",
+          "source": "Source",
+          "action": "Action",
+          "message": {
+            "confirmSpuRecordDelete": "Are you sure you want to delete the SPU record \"SPU \n Date and Time: {{spuDateAndTime}}/Source: {{patientName}}\" ?"
+          },
+          "detailContent": "Detail",
+          "addSelf": "Add (Self)",
+          "addCurrentSpouse": "Add (Current Spouse)"
+        },
+        "spermMergerRecord": {
+          "spermMergerRecord": "Sperm Merger Record",
+          "spermNumber": "Sperm NO.",
+          "mergerDateAndTime": "Merger Date and Time",
+          "embryologist": "Embryologist",
+          "action": "Action",
+          "message": {
+            "confirmSpermMergerRecordDelete": "Are you sure you want to delete the sperm merger record \"Sperm NO.: {{spermNumber}}\" ?"
+          },
+          "detailContent": "Detail"
+        }
+      },
+      "input": {
+        "search": {
+          "placeholder": "Input any text",
+          "prefix": "Search In Table"
+        },
+        "radio": {
+          "notTerminatedAndTerminated": "Not Terminated And Terminated",
+          "notTerminated": "Not Terminated",
+          "terminated": "Terminated"
+        }
+      },
+      "message": {
+        "confirmArtWorksheetDelete": "Are you sure you want to delete the ART worksheet \"NO. {{artWorksheetNo}}\" ?"
+      },
+      "action": "Action",
+      "artWorksheet": {
+        "artWorksheetNo": "ART Worksheet NO.",
+        "cycleType": "Cycle Type",
+        "startDate": "Start Date",
+        "artWorksheet": "ART Worksheet",
+        "currentStatus": "Current Status",
+        "treatmentPlanNo": "Treatment Plan NO.",
+        "startDateEnd": "Range End",
+        "startDateBegin": "Range Start"
+      },
+      "patientProfile": {
+        "chartNumber": "Chart Number",
+        "name": "Name"
+      },
+      "form": {
+        "artWorksheetNo": "ART Worksheet NO.",
+        "treatmentPurpose": "Treatment Purpose",
+        "treatmentType": "Treatment Type",
+        "cycleType": "Cycle Type",
+        "doctor": "Doctor",
+        "institution": "Institution",
+        "startedBy": "Started By",
+        "endedBy": "Ended By",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "outcome": "Outcome",
+        "note": "Note",
+        "treatmentPlanNo": "Treatment Plan NO.",
+        "input": {
+          "artWorksheetNo": {
+            "placeholder": "System generated if left blank"
+          }
+        },
+        "artWorksheet": "ART Worksheet"
+      }
+    },
+    "biopsyRecord":{
+      "form": {
+        "biopsyRecord": "Biopsy Record",
+        "isImportedRecord": "Imported Record",
+        "biopsyNumber": "Biopsy Number",
+        "biopsyDateTime": "Biopsy Date and Time",
+        "biopsiedMassCondition": "Biopsied Mass Condition",
+        "cellCounts": "Cell Counts",
+        "biopsyEmbryologistUser": "Biopsy Embryologist",
+        "isLaserAssisted": "Laser Assisted",
+        "tubingEmbryologistUser": "Tubing Embryologist",
+        "isVisualisedTubing": "Visualised Tubing",
+        "note": "Note",
+        "sampleSubmissionRecord": {
+          "sampleSubmissionRecordList": "Sample Submission Record",
+          "submissionNumber": "Submission Number",
+          "submissionDateTime": "Submission Date and Time",
+          "examinationType": "Examination Type",
+          "examinationResult": "Examination Result",
+          "action": "Action",
+          "message": {
+            "confirmSampleSubmissionRecordDelete": "Are you sure you want to delete the Sample Submission Record?"
+          }
+        }
+      }
+    },
+    "inseminationRecord": {
+      "form": {
+        "inseminationRecord": "Insemination Record",
+        "selectOocytes": "Select Oocytes",
+        "select": "Select",
+        "oocyteNumber": "Oocyte NO",
+        "isImportedFromOtherInstitution": "Imported from Other Institution",
+        "opuDateTime": "OPU Date and Time",
+        "thawingDate": "Thawing Date",
+        "inseminationDateTime": "Insemination Date and Time",
+        "classification": "Classification",
+        "source": "Source",
+        "selectSemenAnalysisAndPreparationRecord": "select Semen Analysis And Preparation Record",
+        "spermNumber": "Sperm NO",
+        "spuDateAndTime": "SPU Date and Time",
+        "examinationDateTime": "Examination Date and Time",
+        "preparationDateTime": "Preparation Date and Time",
+        "collectionMethod": "Collection Method",
+        "owner": "Owner",
+        "inseminationProcedure": "Insemination Procedure",
+        "embryologist": "Embryologist",
+        "note": "Note"
+      }
+    },
+    "observationRecord": {
+      "list": {
+        "observationRecord": "Observation Record",
+        "batchEntryOfObservationRecords": "Batch entry of observation records",
+        "addObservationRecord": "Add observation record",
+        "oocyteNoAndEmbryoNo": "Oocyte No/Embryo No",
+        "oocyteNo": "Oocyte NO",
+        "embryoNo": "Embryo NO",
+        "spermNo": "Sperm NO",
+        "observationDateTime": "Observation Date and Time",
+        "day": "Day",
+        "stage": "Stage",
+        "classification": "Classification",
+        "fertilizationCheck": "Fertilization Check",
+        "observingEmbryologist": "Embryologist",
+        "note": "Note",
+        "noData": "No Data",
+        "semenAnalysisAndPreparationRecord": "Semen Analysis and Preparation Records",
+        "message": {
+          "confirmObservationRecordDelete": "Are you sure you want to delete the Observation Record?"
+        },
+        "option": {
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "D6": "D6",
+          "D7": "D7",
+          "cryo": "cryo",
+          "transfer": "transfer",
+          "insemination": "insemination",
+          "biopsy": "biopsy",
+          "thaw": "thaw",
+          "2hrsPostThaw": "2 hrs post thaw",
+          "TerminationOfCulture": "termination of culture"
+        }
+      },
+      "form": {
+        "observationRecord": "Observation Record",
+        "oocyteNo":"Oocyte NO",
+        "embryoNo":"Embryo NO",
+        "uploadFigure": "Upload Image",
+        "figurePreview": "Preview",
+        "cover": "Cover",
+        "uploadFigureIcon": "Click here or drag and drop files here to upload images",
+        "record": "Record",
+        "observationDateTime": "Observation Date and Time",
+        "observingEmbryologist": "Embryologist",
+        "witnessingEmbryologist": "Witnessing Embryologist",
+        "day": "Day",
+        "stage": "Stage",
+        "classification": "Classification",
+        "classificationMemo": "Memo",
+        "fertilizationCheck": "Fertilization Check",
+        "spindle": "Spindle",
+        "ahaCheck": "aHa",
+        "observationRecordNote": "Note",
+        "classificationTip": "It will be created a system import record when selecting the NG oocyte or DG.",
+        "input": {
+          "classification2": {
+            "placeholder": "ex. 4BB, 4AA, 4CC-"
+          }
+        },
+        "message": {
+          "classificationRequired": "Please select classification",
+          "inputAlphabetAndNumber": "Please input Alphabet and Number",
+          "cellRequired": "Please select oocyte/embryo"
+        },
+        "biopsyRecord": {
+          "biopsyRecordList": "Biopsy Record",
+          "biopsyNumber": "Biopsy Number",
+          "biopsyDateTime": "Biopsy Date and Time",
+          "action": "Action",
+          "message": {
+            "confirmBiopsyRecordDelete": "Are you sure you want to delete the Biopsy Record?"
+          }
+        },
+        "cellOptionList": {
+          "selectCells": "Select Oocyte/Embryo",
+          "cellNo": "Oocyte NO / Embryo NO",
+          "opuDateTime": "OPU Date and Time",
+          "classification": "Classification (Newest)"
+        }
+      }
+    },
+    "sampleSubmissionRecord":{
+      "form": {
+        "sampleSubmissionRecord": "Sample Submission Record",
+        "isImportedRecord": "Imported Record",
+        "submissionNumber": "Submission Number",
+        "submissionDateTime": "Submission Date and Time",
+        "submittedByUser": "Submitted By",
+        "laboratory": "Laboratory",
+        "examinationTypeAndResult": "Examination Type / Result",
+        "note": "Note"
+      }
+    }
+  },
+  "spermOocyteEmbryoManagement": {
+    "donorRecipientRecord": {
+      "form": {
+        "donorRecipientRecord": "Donor/Recipient Record",
+        "recipientCN": "Recipient CN",
+        "donationDateTime": "Donation Date and Time",
+        "embryologist": "Embryologist",
+        "witnessingEmbryologist": "Witnessing Embryologist",
+        "note": "Note",
+        "selectOocytes": {
+          "selectOocytes": "Select Oocytes",
+          "oocyteNo": "Oocyte NO",
+          "isImportedFromOtherInstitution": "Imported from Other Institution",
+          "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotopNo": "Cryotop No",
+          "cryotopColor": "Cryotop Color",
+          "opuDateTime": "OPU Date and Time",
+          "day": "Day (Newest)",
+          "stage": "Stage (Newest)",
+          "classification": "Classification (Newest)",
+          "removalDateTime": "Removal Date and Time",
+          "source": "Source"
+        },
+        "selectSperms": {
+          "selectSperms": "Select Sperms",
+          "spermNo": "Sperm NO",
+          "isImportedFromOtherInstitution": "Imported from Other Institution",
+          "vialCount": "Vial Count",
+          "source": "Source",
+          "vialInfo": {
+            "spermNo": "Sperm NO",
+            "isImportedFromOtherInstitution": "Imported from Other Institution",
+            "spermTank": "Sperm Tank",
+            "building": "Building",
+            "floor": "Floor",
+            "vialContainer": "Vial Container",
+            "vialNumber": "Vial Number",
+            "removalDateTime": "Removal Date and Time"
+          }
+        },
+        "selectEmbryos": {
+          "selectEmbryos": "Select Embryos",
+          "embryoNo": "Embryo NO",
+          "isImportedFromOtherInstitution": "Imported from Other Institution",
+          "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotopNo": "Cryotop No",
+          "cryotopColor": "Cryotop Color",
+          "day": "Day (Newest)",
+          "stage": "Stage (Newest)",
+          "classification": "Classification (Newest)",
+          "cryoDateTime": "Cryo Date and Time",
+          "oocyteSource": "Source (Oocyte)",
+          "spermSource": "Source (Sperm)"
+        },
+        "message": {
+          "recipientRequired": "Please input the correct recipient's chart number."
+        }
+      }
+    },
+    "opuRecord": {
+      "opuDateTime": "OPU Date and Time",
+      "opuRecord": "OPU Record",
+      "opuLocation": "OPU Location",
+      "operatingPhysician": "Operating Physician",
+      "embryologist": "Embryologist",
+      "recheckEmbryologist": "Recheck Embryologist",
+      "follicleNumberLeft": "Follicle Number (Left)",
+      "follicleNumberRight": "Follicle Number (Right)",
+      "oocyte": "Oocyte",
+      "addOneLeft": "Add One (Left)",
+      "addOneRight": "Add One (Right)",
+      "addOneRightOrLeft": "Add One (Right or Left)",
+      "addMultipleRightOrLeft": "Add Multiple (Right or Left)",
+      "oocyteNumber": "Oocyte NO.",
+      "ovary": "Ovary",
+      "action": "Action",
+      "grade1": "GRADE I",
+      "grade2": "GRADE II",
+      "grade3": "GRADE III",
+      "note": "Note",
+      "message": {
+        "confirmOpuRecordSave": "Are you sure the oocyte counts is correct?",
+        "promptOocyteNumRightOrLeft": "How many oocyte would you want to add?",
+        "alertInputGreaterThanOne": "Please input the number is greater or equal one."
+      },
+      "ng": "NG",
+      "left": "Left",
+      "right": "Right",
+      "leftOrRight": "-"
+    },
+    "spuRecord": {
+      "form": {
+        "spuDateAndTime": "SPU Date and Time",
+        "spuLocation": "SPU Location",
+        "lastEjaculationDateAndTime": "Last Ejaculation Date and Time",
+        "abstinenceDays": "Abstinence Days",
+        "note": "Note",
+        "input": {
+          "abstinenceDays_one": "{{count}} day",
+          "abstinenceDays_other": "{{count}} days",
+          "abstinenceHours_one": "and {{count}} hour",
+          "abstinenceHours_other": "and {{count}} hours"
+        },
+        "spuRecord": "SPU Record"
+      }
+    },
+    "spermMergerRecord": {
+      "form": {
+        "mergerDateAndTime": "Merger date and time",
+        "spermNumber": "Sperm NO.",
+        "embryologist": "Embryologist",
+        "note": "Note",
+        "selectSperms": "Select Sperms",
+        "spermMergerRecord": "Sperm Merger Record",
+        "isImportedFromOtherInstitution": "Imported from Other Institution",
+        "spuDateAndTime": "SPU Date and Time",
+        "source": "Source",
+        "owner": "Owner"
+      }
+    },
+    "semenAnalysisAndPreparationRecord": {
+      "form": {
+        "collectionMethod": "Collection Method",
+        "examinationDateAndTime": "Examination Date and Time",
+        "purpose": "Purpose",
+        "preparationDateAndTime": "Preparation Date and Time",
+        "preparationMethod": "Preparation Method",
+        "isImportedRecord": "Imported Record",
+        "embryologist": "Embryologist",
+        "semenVolume": "Semen Volume (ml)",
+        "ph": "pH",
+        "concentration": "Concentration (x10<sup>6</sup>/ml)",
+        "spermNumber": "Sperm Number",
+        "progressive": "Progressive, PR (%)",
+        "nonProgressive": "Non-Progressive, NP (%)",
+        "motile": "Motile (%)",
+        "immotile": "Immotile, IM (%)",
+        "vitality": "Vitality (%)",
+        "totalMotileSpermNumber": "Total Motile Sperm Number",
+        "totalProgressiveSpermNumber": "Total Progressive Sperm Number",
+        "morphology": "Morphology (%)",
+        "roundCell": "Round Cell (x10<sup>6</sup>/ml)",
+        "result": "Result",
+        "note": "Note",
+        "semenAnalysisRecord": "Semen Analysis Record",
+        "preparationRecord": "Preparation Record",
+        "semenAnalysisAndPreparationRecord": "Semen Analysis and Preparation Records"
+      },
+      "list": {
+        "spermNumber": "Sperm NO.: {{spermNumber}}",
+        "collectionMethod": "Collection Method: {{collectionMethod}}",
+        "examinationDateAndTime": "Examination Date and Time: {{examinationDateAndTime}}",
+        "purpose": "Purpose: {{purpose}}",
+        "preparationDateAndTime": "Preparation Date and Time: {{preparationDateAndTime}}",
+        "preparationMethod": "Preparation Method: {{preparationMethod}}",
+        "addSemenAnalysisAndPreparationRecord": "Add Semen Analysis and Preparation Record",
+        "message": {
+          "confirmSemenAnalysisAndPreparationRecordDelete": "Are you sure you want to delete the Semen Analysis and Preparation Record?"
+        },
+        "spuDateTime": "SPU Date and Time: {{spuDateTime}}",
+        "importedDateTime": "Imported from Other Institution / Imported Date and Time: {{importDateTime}}",
+        "noData": "No data"
+      }
+    },
+    "systemImportRecord": {
+      "form": {
+        "systemImportRecord": "System Import Record",
+        "importDateTime": "Import Date and Time",
+        "action": "Action",
+        "embryologist": "Embryologist",
+        "note": "Note",
+        "witnessingEmbryologist": "Witnessing Embryologist",
+        "addEmbryo": "Add Embryo",
+        "addOocyte": "Add Oocyte",
+        "addSperm": "Add Sperm",
+        "addOneEmbryo": "Add One Embryo",
+        "addOneOocyte": "Add One Oocyte",
+        "embryoNumber": "Embryo NO",
+        "isImportedFromOtherInstitution": "Imported from Other Institution",
+        "importedFrom": "Imported From",
+        "day": "Day",
+        "stage": "Stage",
+        "classification": "Classification",
+        "examinationType1": "Examination Type 1",
+        "examinationType2": "Examination Type 2",
+        "oocyteNumber": "Oocyte NO",
+        "spermNumber": "Sperm NO",
+        "result1": "Result 1",
+        "result2": "Result 2",
+        "message": {
+          "dayRequired": "Please select day",
+          "classificationRequired": "Please select classification",
+          "inputAlphabetAndNumber": "Please input Alphabet and Number"
+        }
+      }
+    },
+    "systemExportRecord": {
+      "form": {
+        "systemExportRecord": "System Export Record",
+        "exportDateTime": "Export Date and Time",
+        "reasonForExportFromSystem": "Reason for Export from System",
+        "embryologist": "Embryologist",
+        "note": "Note",
+        "witnessingEmbryologist": "Witnessing Embryologist",
+        "embryoNumber": "Embryo NO",
+        "day": "Day (Newest)",
+        "stage": "Stage (Newest)",
+        "classification": "Classification (Newest)",
+        "oocyteNumber": "Oocyte NO",
+        "spermNumber": "Sperm NO",
+        "isImportedFromOtherInstitution": "Imported from Other Institution",
+        "source": "Source",
+        "sourceOocyte": "Source (Oocyte)",
+        "sourceSperm": "Source (Sperm)",
+        "owner": "Owner",
+        "removalDateAndTime": "Removal Date and Time",
+        "dateOfApplicationForDestruction": "Date of Application for Destruction",
+        "selectVials": "Select Vials",
+        "selectEmbryos": "Select Embryos",
+        "selectOocytes": "Select Oocytes",
+        "vialNumber": "Vial Number",
+        "cryotopNo": "Straw NO.",
+        "cryotopColor": "Straw Color"
+      }
+    }
+  },
+  "cryoManagement": {
+    "cellList":{
+      "oocyte": "Oocyte",
+      "embryo": "Embryo",
+      "oocyteNo": "Oocyte NO",
+      "isImportedFromOtherInstitution": "Imported from Other Institution",
+      "opuDateTime": "OPU Date and Time",
+      "day": "Day (Newest)",
+      "classification": "Classification (Newest)",
+      "source": "Source",
+      "embryoNo": "Embryo NO",
+      "inseminationDateTime": "Insemination Date and Time",
+      "stage": "Stage (Newest)",
+      "oocyteSource": "Source (Oocyte)",
+      "spermSource": "Source (Sperm)",
+      "isImportedRecord": "Imported Record",
+      "sampleSubmissionRecord": "Examination Type / Examination Result"  
+    },
+    "oocyteEmbryoCryoRecord": {
+      "form": {
+        "oocyteEmbryoCryoRecord": "Oocyte And Embryo Cryo Record",
+        "selectOocytes": "Select Oocytes(Select {{cellCounts}} Oocyte)",
+        "selectEmbryos": "Select Embryos(Select {{cellCounts}} Embryo)",
+        "oocyteNo": "Oocyte NO",
+        "isImportedFromOtherInstitution": "Imported from Other Institution",
+        "opuDateTime": "OPU Date and Time",
+        "classification": "Classification (Newest)",
+        "source": "Source",
+        "embryoNo": "Embryo NO",
+        "inseminationDateTime": "Insemination Date and Time",
+        "stage": "Stage (Newest)",
+        "oocyteSource": "Source (Oocyte)",
+        "spermSource": "Source (Sperm)",
+        "isImportedRecord": "Imported Record",
+        "cryoDateTime": "Cryo Date and Time",
+        "embryologist": "Embryologist",
+        "witnessingEmbryologist": "Witnessing Embryologist",
+        "oocyteEmbryofreezingMedium": "Freezing Medium",
+        "cryotopColor": "Cryotop Color",
+        "cryotopNo": "Cryotop No",
+        "note": "Note",
+        "printLabelConfirm": {
+          "title": "Saved successfully",
+          "content": "Do you want to print the label?",
+          "yes": "Yes",
+          "no": "No"
+        }
+      }
+    },
+    "oocyteEmbryoRelocationRecord": {
+      "form": {
+        "oocyteEmbryoRelocationRecord": "Oocyte and Embryo Tank Relocation Record",
+        "selectCryotop": {
+          "selectCryotop": "Select relocated straws",
+          "select": "Select",
+          "oocyteEmbryoTank":"Oocyte and Embryo Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotop": "Cryotop",
+          "cryotopNo": "Cryotop No",
+          "cryotopColor": "Cryotop Color",
+          "cellCounts": "Cell Counts",
+          "storageDate": "Storage Date"
+        },
+        "suggestedLocation": {
+          "suggestedLocation": "Suggested Location",
+          "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container"
+        },
+        "relocationDateTime": "Relocation Date and Time",
+        "embryologist": "Embryologist",
+        "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+        "note": "Note"
+      }
+    },
+    "oocyteEmbryoRemovalRecord": {
+      "form": {
+        "oocyteEmbryoRemovalRecord": "Oocyte and Embryo Tank Removal Record",
+        "selectCryotop": "Select Cryotop",
+        "select": "Select",
+        "oocyteEmbryoTank":"Oocyte and Embryo Tank",
+        "floor": "Floor",
+        "zone": "Zone",
+        "cryotopContainer": "Cryotop Container",
+        "cryotop": "Cryotop",
+        "cryotopNo": "Cryotop No",
+        "cryotopColor": "Cryotop Color",
+        "cellCounts": "Cell Counts",
+        "cryoDateTime": "Cryo Date and Time",
+        "storageDate": "Storage Date",
+        "removalDateTime": "Removal Date and Time",
+        "embryologist": "Embryologist",
+        "witnessingEmbryologist": "Witnessing Embryologist",
+        "note": "Note"
+      }
+    },
+    "oocyteEmbryoStorageRecord": {
+      "form": {
+        "oocyteEmbryoStorageRecord": "Oocyte And Embryo Tank Storage Record",
+        "selectCryotop": {
+          "selectCryotop": "Select Cryotop",
+          "select": "Select",
+          "cryotopNo": "Cryotop No",
+          "cryotopColor": "Cryotop Color",
+          "cellCounts": "Cell Counts",
+          "cryoDateTime": "Cryo Date and Time"
+        },
+        "occupiedLocation": {
+          "occupiedLocation": "Occupied Location",
+          "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotop": "Cryotop",
+          "cryotopNo": "Cryotop No",
+          "cryotopColor": "Cryotop Color",
+          "storageDate": "Storage Date"
+        },
+        "suggestedLocation": {
+          "suggestedLocation": "Suggested Location",
+          "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container"
+        },
+        "storageDateTime": "Storage Date and Time",
+        "embryologist": "Embryologist",
+        "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+        "note": "Note"
+      }
+    },
+    "oocyteEmbryoTank": {
+      "oocyteEmbryoTank": "Oocyte and Embryo Tank",
+      "oocyteNo": "Oocyte NO",
+      "embryoNo": "Embryo NO",
+      "isImportedFromOtherInstitution": "Imported from Other Institution",
+      "day": "Day (Newest)",
+      "classification": "Classification (Newest)"
+    },
+    "oocyteEmbryoThawingRecord": {
+      "form": {
+        "oocyteEmbryoThawingRecord": "Oocyte and Embryo Thawing Record",
+        "selectCryotop": "Select Cryotop",
+        "cryotopNo": "Cryotop No",
+        "cryotopColor": "Cryotop Color",
+        "cellCounts": "Cell Counts",
+        "cryoDateTime": "Cryo Date and Time",
+        "removalDate": "Removal Date",
+        "thawingDateTime": "Thawing Date and Time",
+        "embryologist": "Embryologist",
+        "witnessingEmbryologist": "Witnessing Embryologist",
+        "note": "Note"
+      }
+    }
+  }
+}

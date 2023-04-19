@@ -1,0 +1,1104 @@
+{
+  "header": {
+    "cryoManagement": {
+      "cryoManagement": "冷凍管理",
+      "oocyteEmbryoTank": "卵胚 Tank",
+      "spermTank": "精子 Tank"
+    },
+    "input": {
+      "search": {
+        "placeholder": "請輸入病歷號"
+      }
+    },
+    "systemManagement": {
+      "user": "使用者",
+      "userGroup": "使用者群組",
+      "defineOocyteEmbryoTank": "定義卵胚 Tank",
+      "addOocyteEmbryoTank": "新增卵胚 Tank",
+      "defineSpermTank": "定義精子 Tank",
+      "addSpermTank": "新增精子 Tank",
+      "systemManagement": "系統管理",
+      "optionManagement": "選項管理"
+    },
+    "patientInfo": {
+      "patientProfile": "客戶資料",
+      "patientInfo": "治療"
+    },
+    "embryoCulture": {
+      "artWorksheet": "任務單",
+      "embryoCulture": "胚胎培養"
+    }
+  },
+  "button": {
+    "add": "新增",
+    "delete": "刪除",
+    "edit": "修改",
+    "cancel": "取消",
+    "save": "儲存",
+    "retry": "重試",
+    "login": "登入",
+    "logout": "登出",
+    "search": "查詢"
+  },
+  "formSelect": {
+    "placeholder": "請選取一個選項"
+  },
+  "systemManagement": {
+    "addOocyteEmbryoTank": {
+      "addOocyteEmbryoTank": "新增卵胚 Tank",
+      "addTank": "新增",
+      "message": {
+        "confirmOocyteEmbryoTankDelete": "確定要刪除卵胚 Tank ？"
+      },
+      "form":{
+        "oocyteEmbryoTank":"卵胚 Tank",
+        "tankName": "名稱",
+        "oocyteEmbryoTankModel" : "型號"
+
+      }
+    },
+    "defineOocyteEmbryoTank": {
+      "defineOocyteEmbryoTank": "定義卵胚 Tank",
+      "name": "名稱",
+      "tankNumber": "Tank數目",
+      "action": "動作",
+      "input": {
+        "search": {
+          "placeholder": "請輸入名稱"
+        }
+      },
+      "message": {
+        "confirmOocyteEmbryoTankModelDelete": "確定要刪除卵胚 Tank 定義？"
+      },
+      "form":{
+        "oocyteEmbryoTankModel": "卵胚 Tank 型號",
+        "name": "名稱",
+        "floor": "Floor",
+        "zone": "Zone",
+        "cryotopContainer": "Cryotop Container",
+        "cryotopContainerCapacity": "Cryotop Container Capacity",
+        "zoneNickName": "Zone Nickname",
+        "cryotopContainerNickName": "Cryotop Container Nickname",
+        "cryotopNickName": "Cryotop Nickname",
+        "memoClickEdit": "點擊修改<顯示名稱>、",
+        "memo": "(*) 為子節點總數",
+        "tip": {
+          "zone": "每個 floor 有多少個 zone",
+          "cryotopContainer": "每個 zone 有多少的 cryotopContainer",
+          "cryotopContainerCapacity": "每個 zone 有多少的 cryotopContainer 有多少的 cryotop"
+        }
+      }
+    },
+    "user": {
+      "account": "帳號",
+      "name": "姓名",
+      "action": "動作",
+      "input": {
+        "search": {
+          "placeholder": "請輸入帳號或姓名"
+        }
+      },
+      "form": {
+        "user": "使用者",
+        "account": "帳號",
+        "name": "姓名",
+        "password": "密碼",
+        "email": "電子郵件",
+        "message": {
+          "passwordPlaceholder": "請填入新密碼，未填寫則不變更"
+        },
+        "hidden": "不顯示"
+      },
+      "userGroup": {
+        "userGroup": "使用者群組",
+        "account": "帳號",
+        "name": "姓名",
+        "email": "電子郵件",
+        "password": "密碼",
+        "description": "描述",
+        "allGroups": "所有群組",
+        "belongingGroups": "使用者所屬群組",
+        "userGroupName": "名稱"
+      },
+      "message": {
+        "confirmUserDelete": "確定要刪除使用者「{{account}}」嗎？"
+      },
+      "user": "使用者"
+    },
+    "userGroup": {
+      "action": "動作",
+      "input": {
+        "search": {
+          "placeholder": "請輸入名稱或描述"
+        }
+      },
+      "create": {
+        "description": "描述",
+        "userGroupCreate": "使用者群組建立",
+        "userGroupEdit": "使用者群組編輯",
+        "groupName": "名稱"
+      },
+      "description": "描述",
+      "userGroupName": "名稱",
+      "message": {
+        "confirmUserGroupDelete": "確定要刪除使用者群組「{{name}}」嗎？"
+      },
+      "userGroup": "使用者群組"
+    }
+  },
+  "patientInfo": {
+    "patientProfile": {
+      "name": "姓名",
+      "action": "動作",
+      "input": {
+        "search": {
+          "placeholder": "請輸入病歷號碼"
+        }
+      },
+      "dateOfBirth": "生日",
+      "sex": "性別",
+      "chartNumber": "病歷號碼",
+      "message": {
+        "confirmPatientProfileDelete": "確定要刪除使用者「{{chartNumber}} {{name}}」嗎？"
+      },
+      "detail": {
+        "patientProfile": {
+          "name": "姓名",
+          "chartNumber": "病歷號碼",
+          "dateOfBirth": "生日",
+          "sex": "性別",
+          "patientProfile": "客戶資料",
+          "age": "({{age}} 歲)",
+          "noData": "無資料"
+        },
+        "maritalRelationship": {
+          "maritalRelationship": "配偶關係",
+          "message": {
+            "confirmMaritalRelationshipDelete": "確定要刪除「{{spouseChartNumber}} {{spouseName}}」與「{{patientChartNumber}} {{patientName}}」的配偶關係嗎？",
+            "confirmMaritalRelationshipUpdate": "確定要設定「{{spouseChartNumber}} {{spouseName}}」為「{{patientChartNumber}} {{patientName}}」的目前配偶嗎？"
+          },
+          "currentSpouse": "目前配偶",
+          "chartNumber": "病歷號碼",
+          "dateOfBirth": "生日",
+          "sex": "性別",
+          "name": "姓名",
+          "action": "動作",
+          "setAsCurrentSpouse": "設為目前配偶"
+        },
+        "artWorksheet": {
+          "artWorksheet": "任務單",
+          "artWorksheetNo": "任務單 NO",
+          "startDate": "開始日期",
+          "doctor": "醫師",
+          "treatmentPurpose": "身份別",
+          "action": "動作",
+          "treatmentType": "療程別",
+          "message": {
+            "confirmArtWorksheetDelete": "確定要刪除任務單「No. {{artWorksheetNo}}」嗎？"
+          }
+        },
+        "cryoContract": {
+          "cryoContract": "契約"
+        },
+        "inStorageOocytesAndEmbryos": {
+          "inStorageOocytesAndEmbryos": "卵胚 Tank 冷凍清單"
+        },
+        "treatmentPlan": {
+          "treatmentPlan": "治療單"
+        },
+        "message": {
+          "confirmArtWorksheetDelete": "確定要刪除任務單「No. {{artWorksheetNo}}」嗎？"
+        },
+        "oocyteList": {
+          "oocyteList": "卵子清單",
+          "oocyteNo": "卵子 NO",
+          "status": "狀態",
+          "day": "DAY(最新)",
+          "stage": "Stage(最新)",
+          "classification": "發育分類(最新)",
+          "opuDateTime": "取卵日期與時間",
+          "source": "生產者"
+        },
+        "embryoList": {
+          "embryoList": "胚胎清單",
+          "embryoNo": "胚胎 NO",
+          "status": "狀態",
+          "day": "DAY(最新)",
+          "stage": "Stage(最新)",
+          "classification": "發育分類(最新)",
+          "examinationResult": "PGS 檢查結果 (最新)",
+          "inseminationProcedure": "授精方式",
+          "inseminationDateTime": "授精時間",
+          "oocyteSource": "生產者(卵子)",
+          "spermSource": "生產者(精子)"
+        },
+        "spermList": {
+          "spermList": "精子清單",
+          "spermNo": "精子 NO",
+          "status": "狀態",
+          "spuDateTime": "取精日期與時間",
+          "source": "生產者",
+          "owner": "擁有者"
+        },
+        "systemImportRecord": {
+          "systemImportRecord": "系統移入紀錄",
+          "importDateTime": "移入日期與時間",
+          "importEmbryo": "移入胚胎",
+          "importOocyte": "移入卵子",
+          "importSperm": "移入精子",
+          "action": "動作",
+          "detail": "詳細內容",
+          "message": {
+            "confirmSystemImportRecordDelete": "確定要刪除該筆系統移入紀錄嗎？"
+          }
+        },
+        "systemExportRecord": {
+          "systemExportRecord": "系統移出紀錄",
+          "action": "動作",
+          "detail": "詳細內容",
+          "exportDateTime": "移出日期與時間",
+          "reasonForExportFromSystem": "移出理由",
+          "exportEmbryo": "移出胚胎",
+          "exportOocyte": "移出卵子",
+          "exportVial": "移出 Vial",
+          "message": {
+            "confirmSystemExportRecordDelete": "確定要刪除該筆系統移出紀錄嗎？"
+          }
+        },
+        "donorRecipientRecord": {
+          "donorRecipientRecord": "轉贈紀錄",
+          "action": "動作",
+          "detail": "詳細內容",
+          "donationDateTime": "轉贈日期與時間",
+          "recipient": "受贈者",
+          "donateOocyte": "轉贈卵子",
+          "donateSperm": "轉贈精子",
+          "donateEmbryo": "轉贈胚胎"
+        },
+        "semenAnalysisAndPreparationRecord": {
+          "semenAnalysisAndPreparationRecord": "精液檢查暨純化紀錄清單",
+          "examinationDateAndTime": "檢查日期與時間",
+          "preparationDateAndTime": "純化日期與時間",
+          "owner": "擁有者",
+          "detailContent": "詳細內容",
+          "source": "生產者",
+          "spuDateTime": "取精時間：{{spuDateTime}}",
+          "importDateTime": "移入時間：{{importDateTime}}",
+          "importFromOtherInstitution": "外院移入"
+        }
+      },
+      "patientProfile": "客戶資料",
+      "form": {
+        "name": "姓名",
+        "message": {
+          "passwordPlaceholder": "請填入新密碼，未填寫則不變更"
+        },
+        "chartNumber": "病歷號碼",
+        "sex": "性別",
+        "dateOfBirth": "生日",
+        "patientProfile": "客戶資料"
+      }
+    },
+    "maritalRelationship": {
+      "chartNumber": "病歷號碼",
+      "currentSpouse": "目前配偶",
+      "input": {
+        "radio": {
+          "yes": "是",
+          "no": "否"
+        }
+      },
+      "spouseCreate": "新增配偶"
+    }
+  },
+  "embryoCulture": {
+    "artWorksheet": {
+      "detail": {
+        "artWorksheet": {
+          "artWorksheetNo": "任務單 NO",
+          "treatmentPurpose": "身份別",
+          "treatmentType": "療程別",
+          "cycleType": "週期分類",
+          "doctor": "醫師",
+          "institution": "院所",
+          "startedBy": "建單者",
+          "endedBy": "結單者",
+          "startDate": "開始日期",
+          "endDate": "結束日期",
+          "outcome": "結束原因",
+          "note": "附註",
+          "treatmentPlanNo": "治療單 NO",
+          "artWorksheet": "任務單"
+        },
+        "summary": {
+          "summary": "統計資料",
+          "numbers": "數目",
+          "ova": "取卵數",
+          "thawed": "解凍數",
+          "transferred": "植入數",
+          "stored": "冷凍數",
+          "storedMii": "冷凍數(卵子)",
+          "storedEmbryo": "冷凍數(胚胎)",
+          "insemination": "授精",
+          "inseminated": "授精數",
+          "ivf": "IVF",
+          "icsi": "ICSI",
+          "imsi": "IMSI",
+          "others": "其他",
+          "kpis": "成長率",
+          "oocyteRetrievalRate": "取卵率",
+          "maturationRate": "成熟率",
+          "fr": "FR",
+          "ger": "GER",
+          "br": "BR",
+          "gbr": "GBR",
+          "survivalRate": "存活率",
+          "tips": {
+            "ova": "取卵紀錄：取卵顆數總和",
+            "thawed": "卵胚解凍紀錄：選擇 Cryotop 細胞數目總和",
+            "transferred": "植入紀錄：選擇胚胎顆數總和",
+            "stored": "卵胚冷凍紀錄：選擇卵子、胚胎顆數總和",
+            "storedMii": "卵胚冷凍紀錄：選擇卵子顆數總和",
+            "storedEmbryo": "卵胚冷凍紀錄：選擇胚胎顆數總和",
+            "inseminated": "授精紀錄 產生的胚胎符合條件*的數量 \n\n *胚胎(或卵子)所有觀察紀錄中， 最新 Stage=[授精當下]的紀錄 \n (Day=D0 & 前一張觀察紀錄 發育分類 != GV|不良卵子) | \n (Day=D1 & 前一張觀察紀錄 發育分類 != MI|GV|不良卵子)",
+            "ivf": "分子：授精數的胚胎中 D0 最新授精方式為Standard*的次數 \n 分母：授精數 \n\n *D0胚胎Standard授精方式 \n 胚|卵的觀察紀錄，最新Day=D0 & Stage=授精當下的觀察時間 \n 關聯胚>卵與觀察紀錄同一天(最相近時間)的授精紀錄(授精日期)，授精方式=Standard",
+            "icsi": "分子：授精數的胚胎中 D0 最新授精方式為ICSI*的次數 \n 分母：授精數 \n\n *D0胚胎ICSI授精方式 \n 胚|卵的觀察紀錄，最新Day=D0 & Stage=授精當下的觀察時間 \n 關聯胚>卵與觀察紀錄同一天(最相近時間)的授精紀錄(授精日期)，授精方式=ICSI",
+            "imsi": "分子：授精數的胚胎中 D0 最新授精方式為IMSI*的次數 \n 分母：授精數 \n\n *D0胚胎IMSI授精方式 \n 胚|卵的觀察紀錄，最新Day=D0 & Stage=授精當下的觀察時間 \n 關聯胚>卵與觀察紀錄同一天(最相近時間)的授精紀錄(授精日期)，授精方式=IMSI", 
+            "others": "分子：授精數的胚胎中 D0 最新授精方式為其他*的次數 \n 分母：授精數 \n\n *D0胚胎其他授精方式 \n 胚|卵的觀察紀錄，最新Day=D0 & Stage=授精當下的觀察時間 \n 關聯胚>卵與觀察紀錄同一天(最相近時間)的授精紀錄(授精日期)，授精方式=其他",
+            "oocyteRetrievalRate": "分子：取卵紀錄 新增卵子顆數 \n 分母：取卵紀錄 卵泡數(左) + 卵泡數(右)",
+            "maturationRate": "分子：觀察紀錄 Day=D0 & 發育分類=MII 的顆數​ \n 分母：取卵紀錄 新增卵子顆數",
+            "fr": "分子(正常授精數)：授精數的胚胎符合條件*的顆數 \n 分母：授精數 \n\n *胚胎(或卵子) \n 1.有多個觀察紀錄(Stage=授精當下) & 第一次授精紀錄(授精方式!=Standard) \n 與第二個觀察紀錄之間有觀察紀錄(如NPN)，則取至之間：最新觀察紀錄 受精確認=+ \n 2.其他皆判斷最新觀察紀錄 受精確認=+",
+            "ger": "分子：FR 的分子的胚胎 D3 12:00 前 觀察記錄 (發育分類=8II|Comp|Morula) | (發育分類手寫=nI|nII, n>=6) 的顆數 \n 分母(正常授精數)：FR 的分子",
+            "br": "分子：FR 的分子的胚胎 D5 12:00 前 觀察記錄 (發育分類=EB|Blastocyst|5BB|5BC) | (發育分類手寫=nXX, n 為任意數字, X 為任意英文) 的顆數 \n 分母(正常授精數)：FR 的分子",
+            "gbr": "分子：FR 的分子的胚胎 所有觀察紀錄中有 \n ( \n (Day=D5, Stage=冷凍當下) | \n (Day=D5, Stage=植入當下) | \n (Day=D6, Stage=冷凍當下) | \n (Day=D6, Stage=植入當下) \n ) & \n !(Day=D7, Stage=冷凍當下) & \n !(Day=D7, Stage=植入當下) & \n 最新觀察紀錄 受精確認=+ & \n 發育分類手寫=沒有減號 (如 4CC-) & 非 nCX (n 為任意數字, X 為任意英文) \n 分母(正常授精數)：FR 的分子",
+            "survivalRate": "分子：卵胚解凍紀錄的細胞的觀察紀錄 Stage=解凍當下 & 發育分類!=DG \n 分母：解凍紀錄的細胞數目"
+          }
+        },
+        "inseminationRecord": {
+          "inseminationRecord" : "授精紀錄",
+          "inseminationDateTime": "授精日期與時間",
+          "oocyteNumbers": "卵子數目",
+          "inseminationProcedure": "受精方式",
+          "embryologist": "操作者",
+          "action": "動作",
+          "detailContent": "詳細內容",
+          "message": {
+            "confirmInseminationRecordDelete": "確定要刪除該筆授精紀錄嗎？"
+          }
+        },
+        "oocyteList": {
+          "oocyteList": "卵子清單",
+          "oocyteNo": "卵子 NO",
+          "status": "狀態",
+          "day": "DAY(最新)",
+          "stage": "Stage(最新)",
+          "classification": "發育分類(最新)",
+          "opuDateTime": "取卵日期與時間",
+          "source": "生產者"
+        },
+        "embryoList": {
+          "embryoList": "胚胎清單",
+          "embryoNo": "胚胎 NO",
+          "status": "狀態",
+          "day": "DAY(最新)",
+          "stage": "Stage(最新)",
+          "classification": "發育分類(最新)",
+          "examinationResult": "PGS 檢查結果 (最新)",
+          "inseminationProcedure": "授精方式",
+          "inseminationDateTime": "授精時間",
+          "oocyteSource": "生產者(卵子)",
+          "spermSource": "生產者(精子)"
+        },
+        "spermList": {
+          "spermList": "精子清單",
+          "spermNo": "精子 NO",
+          "status": "狀態",
+          "spuDateTime": "取精日期與時間",
+          "source": "生產者",
+          "owner": "擁有者"
+        },
+        "observationRecord": {
+          "observationRecord": "觀察紀錄",
+          "oocyteNoAndEmbryoNo": "卵子No/胚胎No",
+          "observationDateTime": "觀察日期與時間",
+          "day": "DAY(最新)",
+          "stage": "Stage(最新)",
+          "classification": "發育分類(最新)",
+          "detailContent": "詳細內容"
+        },
+        "oocyteEmbryoCryoRecord": {
+          "oocyteEmbryoCryoRecord": "卵胚冷凍紀錄",
+          "cryoDateTime": "冷凍日期與時間",
+          "cryotopNo": "Cryotop 編號",
+          "cryotopColor": "Cryotop 顏色",
+          "cellCounts": "細胞數目",
+          "embryologist": "操作者",
+          "printLabel": "列印標籤",
+          "action": "動作",
+          "detailContent": "詳細內容",
+          "message": {
+            "confirmOocyteEmbryoCryoRecordDelete": "確定要刪除該筆卵胚冷凍紀錄嗎？"
+          }
+        },
+        "oocyteEmbryoRelocationRecord": {
+          "oocyteEmbryoRelocationRecord": "卵胚 Tank 搬移紀錄",
+          "relocationDate": "搬移日期",
+          "embryologist": "操作者",
+          "action": "動作",
+          "detailContent": "詳細內容"
+        },
+        "oocyteEmbryoRemovalRecord": {
+          "oocyteEmbryoRemovalRecord": "卵胚 Tank 出庫紀錄",
+          "removalDate": "出庫日期",
+          "embryologist": "操作者",
+          "action": "動作",
+          "detailContent": "詳細內容"
+        },
+        "oocyteEmbryoStorageRecord": {
+          "oocyteEmbryoStorageRecord": "卵胚 Tank 入庫紀錄",
+          "storageDate": "入庫日期",
+          "oocyteEmbryoTank": "卵胚 Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "embryologist": "操作者",
+          "action": "動作",
+          "detailContent": "詳細內容"
+        },
+        "oocyteEmbryoThawingRecord": {
+          "oocyteEmbryoThawingRecord": "卵胚解凍紀錄",
+          "thawingDateTime": "解凍日期與時間",
+          "embryologist": "操作者",
+          "action": "動作",
+          "detailContent": "詳細內容",
+          "message": {
+            "confirmOocyteEmbryoThawingRecordDelete": "確定要刪除該筆卵胚解凍紀錄嗎？"
+          }
+        },
+        "opuRecord": {
+          "opuRecord": "取卵紀錄",
+          "opuDateTime": "取卵日期與時間",
+          "oocyteCounts": "卵子數目",
+          "doctor": "醫師",
+          "action": "動作",
+          "message": {
+            "confirmOpuRecordDelete": "確定要刪除取卵紀錄「取卵日期與時間：{{opuDateTime}}／卵子數目：{{oocyteCounts}}」嗎？"
+          },
+          "detailContent": "詳細內容"
+        },
+        "spuRecord": {
+          "spuRecord": "取精紀錄",
+          "spermNumber": "精子 NO",
+          "spuDateAndTime": "取精日期與時間",
+          "source": "生產者",
+          "action": "動作",
+          "message": {
+            "confirmSpuRecordDelete": "確定要刪除取精紀錄「取精日期與時間：{{spuDateAndTime}}／生產者：{{patientName}}」嗎？"
+          },
+          "detailContent": "詳細內容",
+          "addSelf": "新增（自己）",
+          "addCurrentSpouse": "新增（目前配偶）"
+        },
+        "spermMergerRecord": {
+          "spermMergerRecord": "精子合併紀錄",
+          "spermNumber": "精子 NO",
+          "mergerDateAndTime": "合併日期與時間",
+          "embryologist": "操作者",
+          "action": "動作",
+          "message": {
+            "confirmSpermMergerRecordDelete": "確定要刪除精子合併紀錄「精子 No：{{spermNumber}}」嗎？"
+          },
+          "detailContent": "詳細內容"
+        }
+      },
+      "input": {
+        "search": {
+          "placeholder": "請輸入任意文字",
+          "prefix": "表格內搜尋"
+        },
+        "radio": {
+          "notTerminatedAndTerminated": "未結案與已結案",
+          "notTerminated": "未結案",
+          "terminated": "已結案"
+        }
+      },
+      "message": {
+        "confirmArtWorksheetDelete": "確定要刪除任務單「No. {{artWorksheetNo}}」嗎？"
+      },
+      "action": "動作",
+      "artWorksheet": {
+        "artWorksheetNo": "任務單 NO",
+        "cycleType": "週期分類",
+        "startDate": "開始日期",
+        "artWorksheet": "任務單",
+        "currentStatus": "目前狀態",
+        "treatmentPlanNo": "治療單 NO",
+        "startDateEnd": "結束區間",
+        "startDateBegin": "開始區間"
+      },
+      "patientProfile": {
+        "chartNumber": "病歷號碼",
+        "name": "姓名"
+      },
+      "form": {
+        "artWorksheetNo": "任務單 NO",
+        "treatmentPurpose": "身份別",
+        "treatmentType": "療程別",
+        "cycleType": "週期分類",
+        "doctor": "醫師",
+        "institution": "院所",
+        "startedBy": "建單者",
+        "endedBy": "結單者",
+        "startDate": "開始日期",
+        "endDate": "結束日期",
+        "outcome": "結束原因",
+        "note": "附註",
+        "treatmentPlanNo": "治療單 NO",
+        "input": {
+          "artWorksheetNo": {
+            "placeholder": "未填寫則由系統自動產生"
+          }
+        },
+        "artWorksheet": "任務單"
+      }
+    },
+    "biopsyRecord":{
+      "form": {
+        "biopsyRecord": "採樣紀錄",
+        "isImportedRecord": "外院紀錄",
+        "biopsyNumber": "採樣編號",
+        "biopsyDateTime": "採樣日期與時間",
+        "biopsiedMassCondition": "檢體品質",
+        "cellCounts": "細胞數目",
+        "biopsyEmbryologistUser": "Biopsy 胚胎師",
+        "isLaserAssisted": "打雷射",
+        "tubingEmbryologistUser": "Tubing 胚胎師",
+        "isVisualisedTubing": "看到入試管",
+        "note": "備註",
+        "sampleSubmissionRecord": {
+          "sampleSubmissionRecordList": "送檢紀錄清單",
+          "submissionNumber": "送檢編號",
+          "submissionDateTime": "送檢日期與時間",
+          "examinationType": "檢查項目",
+          "examinationResult": "檢查結果",
+          "action": "動作",
+          "message": {
+            "confirmSampleSubmissionRecordDelete": "確定要刪除該筆送檢紀錄嗎？"
+          }
+        }
+      }
+    },
+    "inseminationRecord": {
+      "form": {
+        "inseminationRecord": "授精紀錄",
+        "selectOocytes": "選擇卵子",
+        "select": "選擇",
+        "oocyteNumber": "卵子 NO",
+        "isImportedFromOtherInstitution": "外院移入",
+        "opuDateTime": "取卵日期與時間",
+        "thawingDate": "解凍日期",
+        "inseminationDateTime": "授精日期與時間",
+        "classification": "發育分類",
+        "source": "生產者",
+        "selectSemenAnalysisAndPreparationRecord": "選擇精液檢查暨純化紀錄",
+        "spermNumber": "精子 NO",
+        "spuDateTime": "取精日期與時間",
+        "examinationDateTime": "檢查日期與時間",
+        "preparationDateTime": "純化日期與時間",
+        "collectionMethod": "精蟲來源",
+        "owner": "擁有者",
+        "inseminationProcedure": "授精方式",
+        "embryologist": "操作者",
+        "note": "備註"
+      }
+    },
+    "observationRecord": {
+      "list": {
+        "observationRecord": "觀察紀錄",
+        "batchEntryOfObservationRecords": "批次新增觀察紀錄",
+        "addObservationRecord": "新增觀察紀錄",
+        "oocyteNoAndEmbryoNo": "卵子 No / 胚胎 No",
+        "oocyteNo": "卵子 NO",
+        "embryoNo": "胚胎 NO",
+        "spermNo": "精子 NO",
+        "observationDateTime": "觀察日期與時間",
+        "day": "Day",
+        "stage": "Stage",
+        "classification": "發育分類",
+        "fertilizationCheck": "受精確認",
+        "observingEmbryologist": "觀察者",
+        "note": "備註",
+        "noData": "無資料",
+        "semenAnalysisAndPreparationRecord": "檢查暨純化紀錄",
+        "message": {
+          "confirmObservationRecordDelete": "確定要刪除該筆觀察紀錄嗎？"
+        },
+        "option": {
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "D6": "D6",
+          "D7": "D7",
+          "cryo": "冷凍當下",
+          "transfer": "植入當下",
+          "insemination": "授精當下",
+          "biopsy": "採樣當下",
+          "thaw": "解凍當下",
+          "2hrsPostThaw": "解凍後兩小時",
+          "TerminationOfCulture": "培養中止"
+        }
+      },
+      "form": {
+        "observationRecord": "觀察紀錄",
+        "oocyteNo":"卵子 NO",
+        "embryoNo":"胚胎 NO",
+        "uploadFigure": "上傳照片",
+        "figurePreview": "照片預覽",
+        "cover": "封面照片",
+        "uploadFigureIcon": "點擊此處或拖曳檔案至此上傳",
+        "record": "紀錄內容",
+        "observationDateTime": "觀察日期與時間",
+        "observingEmbryologist": "觀察者",
+        "witnessingEmbryologist": "確認者",
+        "day": "Day",
+        "stage": "Stage",
+        "classification": "發育分類",
+        "classificationMemo": "備忘錄",
+        "fertilizationCheck": "受精確認",
+        "spindle": "Spindle",
+        "ahaCheck": "aHa",
+        "observationRecordNote": "備註",
+        "input": {
+          "classification2": {
+            "placeholder": "ex. 4BB, 4AA, 4CC-"
+          }
+        },
+        "message": {
+          "classificationRequired": "請輸入發育分類",
+          "inputAlphabetAndNumber": "請輸入英文及數字",
+          "cellRequired": "請選擇卵子/胚胎"
+        },
+        "biopsyRecord": {
+          "biopsyRecordList": "採樣紀錄清單",
+          "biopsyNumber": "採樣編號",
+          "biopsyDateTime": "採樣日期與時間",
+          "action": "動作",
+          "message": {
+            "confirmBiopsyRecordDelete": "確定要刪除該筆採樣紀錄嗎？"
+          }
+        },
+        "cellOptionList": {
+          "selectCells": "選擇卵胚",
+          "cellNo": "卵子NO / 胚胎NO",
+          "opuDateTime": "取卵日期與時間",
+          "classification": "發育分類 (最新)"
+        }
+      }
+    },
+    "sampleSubmissionRecord":{
+      "form": {
+        "sampleSubmissionRecord": "送檢紀錄",
+        "isImportedRecord": "外院紀錄",
+        "submissionNumber": "送檢編號",
+        "submissionDateTime": "送檢日期",
+        "submittedByUser": "送檢人",
+        "laboratory": "檢驗單位",
+        "examinationTypeAndResult": "檢查項目/檢查結果",
+        "note": "備註"
+      }
+    }
+  },
+  "spermOocyteEmbryoManagement": {
+    "donorRecipientRecord": {
+      "form": {
+        "donorRecipientRecord": "轉贈紀錄",
+        "recipientCN": "受贈者病歷號碼",
+        "donationDateTime": "轉贈日期與時間",
+        "embryologist": "操作者",
+        "witnessingEmbryologist": "確認者",
+        "note": "備註",
+        "selectOocytes": {
+          "selectOocytes": "選擇卵子",
+          "oocyteNo": "卵子 NO",
+          "isImportedFromOtherInstitution": "外院移入",
+          "oocyteEmbryoTank": "卵胚Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotopNo": "Cryotop 編號",
+          "cryotopColor": "Cryotop 顏色",
+          "opuDateTime": "取卵日期與時間",
+          "day": "Day (最新)",
+          "stage": "Stage (最新)",
+          "classification": "發育分類 (最新)",
+          "removalDateTime": "出庫日期與時間",
+          "source": "生產者"
+        },
+        "selectSperms": {
+          "selectSperms": "選擇精子",
+          "spermNo": "精子 NO",
+          "isImportedFromOtherInstitution": "外院移入",
+          "vialCount": "Vial 數量",
+          "source": "生產者",
+          "vialInfo": {
+            "spermNo": "精子 NO",
+            "isImportedFromOtherInstitution": "外院移入",
+            "spermTank": "精子 Tank",
+            "building": "Building",
+            "floor": "Floor",
+            "vialContainer": "Vial Container",
+            "vialNumber": "Vial 編號",
+            "removalDateTime": "出庫日期與時間"
+          }
+        },
+        "selectEmbryos": {
+          "selectEmbryos": "選擇胚胎",
+          "embryoNo": "胚胎 NO",
+          "isImportedFromOtherInstitution": "外院移入",
+          "oocyteEmbryoTank": "卵胚Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotopNo": "Cryotop 編號",
+          "cryotopColor": "Cryotop 顏色",
+          "day": "Day (最新)",
+          "stage": "Stage (最新)",
+          "classification": "發育分類 (最新)",
+          "cryoDateTime": "冷凍日期",
+          "oocyteSource": "生產者(卵子)",
+          "spermSource": "生產者(精子)"
+        },
+        "message": {
+          "recipientRequired": "請輸入正確的受贈者病歷號碼"
+        }
+      }
+    },
+    "opuRecord": {
+      "opuDateTime": "取卵日期與時間",
+      "opuRecord": "取卵紀錄",
+      "opuLocation": "取卵地點",
+      "operatingPhysician": "施術醫師",
+      "embryologist": "胚胎師",
+      "recheckEmbryologist": "Recheck 胚胎師",
+      "follicleNumberLeft": "卵泡數 (左)",
+      "follicleNumberRight": "卵泡數 (右)",
+      "oocyte": "卵子",
+      "addOneLeft": "新增一顆 (左)",
+      "addOneRight": "新增一顆 (右)",
+      "addOneRightOrLeft": "新增一顆 (不分邊)",
+      "addMultipleRightOrLeft": "新增多顆 (不分邊)",
+      "oocyteNumber": "卵子 NO",
+      "ovary": "卵巢",
+      "action": "動作",
+      "grade1": "GRADE I",
+      "grade2": "GRADE II",
+      "grade3": "GRADE III",
+      "note": "備註",
+      "message": {
+        "confirmOpuRecordSave": "確定卵子數量正確嗎？",
+        "promptOocyteNumRightOrLeft": "請問要新增幾顆卵子（不分邊）？",
+        "alertInputGreaterThanOne": "請輸入大於等於 1 的數字"
+      },
+      "ng": "不良",
+      "left": "左",
+      "right": "右",
+      "leftOrRight": "-"
+    },
+    "spuRecord": {
+      "form": {
+        "spuDateAndTime": "取精日期與時間",
+        "spuLocation": "取精地點",
+        "lastEjaculationDateAndTime": "最後一次排出日期與時間",
+        "abstinenceDays": "禁慾天數",
+        "note": "備註",
+        "input": {
+          "abstinenceDays_one": "{{count}} 天",
+          "abstinenceDays_other": "{{count}} 天",
+          "abstinenceHours_one": "{{count}} 小時",
+          "abstinenceHours_other": "{{count}} 小時"
+        },
+        "spuRecord": "取精紀錄"
+      }
+    },
+    "spermMergerRecord": {
+      "form": {
+        "mergerDateAndTime": "合併日期與時間",
+        "spermNumber": "精子 NO",
+        "embryologist": "操作者",
+        "note": "備註",
+        "selectSperms": "選擇精子",
+        "spermMergerRecord": "精子合併紀錄",
+        "isImportedFromOtherInstitution": "外院移入",
+        "spuDateAndTime": "取精日期與時間",
+        "source": "生產者",
+        "owner": "擁有者"
+      }
+    },
+    "semenAnalysisAndPreparationRecord": {
+      "form": {
+        "collectionMethod": "精蟲來源",
+        "examinationDateAndTime": "檢查日期與時間",
+        "purpose": "檢查目的",
+        "preparationDateAndTime": "純化日期與時間",
+        "preparationMethod": "純化方式",
+        "isImportedRecord": "外院紀錄",
+        "embryologist": "操作者",
+        "semenVolume": "精液體積(ml)",
+        "ph": "pH",
+        "concentration": "濃度(×10<sup>6</sup>/ml)",
+        "spermNumber": "精子總數",
+        "progressive": "直線前進(%)",
+        "nonProgressive": "非直線前進(%)",
+        "motile": "活動力(%)",
+        "immotile": "非活動力(%)",
+        "vitality": "存活率(%)",
+        "totalMotileSpermNumber": "活動精子總數",
+        "totalProgressiveSpermNumber": "直線前進精子總數",
+        "morphology": "型態正常率(%)",
+        "roundCell": "白血球數量(×10<sup>6</sup>/ml)",
+        "result": "結果",
+        "note": "備註",
+        "semenAnalysisRecord": "精液檢查紀錄",
+        "preparationRecord": "精液純化紀錄",
+        "semenAnalysisAndPreparationRecord": "精液檢查暨純化紀錄"
+      },
+      "list": {
+        "spermNumber": "精子 NO：{{spermNumber}}",
+        "collectionMethod": "精蟲來源：{{collectionMethod}}",
+        "examinationDateAndTime": "檢查日期與時間：{{examinationDateAndTime}}",
+        "purpose": "檢查目的：{{purpose}}",
+        "preparationDateAndTime": "純化日期與時間：{{preparationDateAndTime}}",
+        "preparationMethod": "純化方式：{{preparationMethod}}",
+        "addSemenAnalysisAndPreparationRecord": "新增相關紀錄",
+        "message": {
+          "confirmSemenAnalysisAndPreparationRecordDelete": "確定要刪除該筆精液檢查暨純化紀錄嗎？\n\n‧ 精蟲來源：{{collectionMethod}}\n‧ 檢查日期與時間：{{examinationDateAndTime}}\n‧ 檢查目的：{{purposeName}}\n‧ 純化日期與時間：{{preparationDateAndTime}}\n‧ 純化方式：{{preparationMethodName}}"
+        },
+        "spuDateTime": "取精日期與時間：{{spuDateTime}}",
+        "importedDateTime": "外院移入 / 移入日期與時間：{{importDateTime}}",
+        "noData": "無資料"
+      }
+    },
+    "systemImportRecord": {
+      "form": {
+        "systemImportRecord": "系統移入紀錄",
+        "importDateTime": "移入日期與時間",
+        "action": "動作",
+        "embryologist": "操作者",
+        "note": "備註",
+        "witnessingEmbryologist": "確認者",
+        "addEmbryo": "新增胚胎",
+        "addOocyte": "新增卵子",
+        "addSperm": "新增精子",
+        "addOneEmbryo": "新增一顆胚胎",
+        "addOneOocyte": "新增一顆卵子",
+        "embryoNumber": "胚胎 NO",
+        "isImportedFromOtherInstitution": "外院移入",
+        "importedFrom": "移轉院所",
+        "day": "Day",
+        "stage": "Stage",
+        "classification": "發育分類",
+        "examinationType1": "檢查項目 1",
+        "examinationType2": "檢查項目 2",
+        "oocyteNumber": "卵子 NO",
+        "spermNumber": "精子 NO",
+        "result1": "檢查結果 1",
+        "result2": "檢查結果 2",
+        "message": {
+          "dayRequired": "請輸入Day",
+          "classificationRequired": "請輸入發育分類",
+          "inputAlphabetAndNumber": "請輸入英文及數字"
+        }
+      }
+    },
+    "systemExportRecord": {
+      "form": {
+        "systemExportRecord": "系統移出紀錄",
+        "exportDateTime": "移出日期與時間",
+        "reasonForExportFromSystem": "移出理由",
+        "embryologist": "操作者",
+        "note": "備註",
+        "witnessingEmbryologist": "確認者",
+        "embryoNumber": "胚胎 NO",
+        "oocyteNumber": "卵子 NO",
+        "spermNumber": "精子 NO",
+        "day": "Day (最新)",
+        "stage": "Stage (最新)",
+        "classification": "發育分類 (最新)",
+        "isImportedFromOtherInstitution": "外院移入",
+        "source": "生產者",
+        "sourceOocyte": "生產者 (卵)",
+        "sourceSperm": "生產者 (精)",
+        "owner": "擁有者",
+        "removalDateAndTime": "出庫日期與時間",
+        "dateOfApplicationForDestruction": "申請銷毀日期",
+        "selectVials": "選擇 Vial",
+        "selectEmbryos": "選擇胚胎",
+        "selectOocytes": "選擇卵子",
+        "vialNumber": "Vial 編號",
+        "cryotopNo": "Cryotop 編號",
+        "cryotopColor": "Cryotop 顏色"
+      }
+    }
+  },
+  "cryoManagement": {
+    "cellList":{
+      "oocyte": "卵子",
+      "embryo": "胚胎",
+      "oocyteNo": "卵子 NO",
+      "isImportedFromOtherInstitution": "外院移入",
+      "opuDateTime": "取卵日期與時間",
+      "day": "Day (最新)",
+      "classification": "發育分類 (最新)",
+      "source": "生產者",
+      "embryoNo": "胚胎 NO",
+      "inseminationDateTime": "授精日期與時間",
+      "stage": "Stage (最新)",
+      "oocyteSource": "生產者 (卵)",
+      "spermSource": "生產者 (精)",
+      "isImportedRecord": "外院紀錄",
+      "sampleSubmissionRecord": "檢查項目/檢查結果"  
+    },
+    "oocyteEmbryoCryoRecord": {
+      "form": {
+        "oocyteEmbryoCryoRecord": "卵胚冷凍紀錄",
+        "selectOocytes": "選擇卵子(選擇{{cellCounts}}顆)",
+        "selectEmbryos": "選擇胚胎(選擇{{cellCounts}}顆)",
+        "oocyteNo": "卵子 NO",
+        "isImportedFromOtherInstitution": "外院移入",
+        "opuDateTime": "取卵日期與時間",
+        "classification": "發育分類 (最新)",
+        "source": "生產者",
+        "embryoNo": "胚胎 NO",
+        "inseminationDateTime": "授精日期與時間",
+        "stage": "Stage (最新)",
+        "oocyteSource": "生產者 (卵)",
+        "spermSource": "生產者 (精)",
+        "isImportedRecord": "外院紀錄",
+        "cryoDateTime": "冷凍日期與時間",
+        "embryologist": "操作者",
+        "witnessingEmbryologist": "確認者",
+        "oocyteEmbryofreezingMedium": "冷凍試劑",
+        "cryotopColor": "Cryotop 顏色",
+        "cryotopNo": "Cryotop 編號",
+        "note": "注意事項",
+        "printLabelConfirm": {
+          "title": "儲存成功",
+          "content": "要列印標籤嗎?",
+          "yes": "好",
+          "no": "不好"
+        }
+      }
+    },
+    "oocyteEmbryoRelocationRecord": {
+      "form": {
+        "oocyteEmbryoRelocationRecord": "卵胚 Tank 搬移紀錄",
+        "selectCryotop": {
+          "selectCryotop": "選擇要搬移的 Cryotop",
+          "select": "選擇",
+          "oocyteEmbryoTank":"卵胚 Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotop": "Cryotop",
+          "cryotopNo": "Cryotop 編號",
+          "cryotopColor": "Cryotop 顏色",
+          "cellCounts": "細胞數目",
+          "storageDate": "入庫日期"
+        },
+        "suggestedLocation": {
+          "suggestedLocation": "建議位置",
+          "oocyteEmbryoTank": "卵胚 Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container"
+        },
+        "relocationDateTime": "搬移日期與時間",
+        "embryologist": "操作者",
+        "oocyteEmbryoTank": "卵胚 Tank",
+        "note": "注意事項"
+      }
+    },
+    "oocyteEmbryoRemovalRecord": {
+      "form": {
+        "oocyteEmbryoRemovalRecord": "卵胚 Tank 出庫紀錄",
+        "selectCryotop": "選擇 Cryotop",
+        "select": "選擇",
+        "oocyteEmbryoTank":"卵胚 Tank",
+        "floor": "Floor",
+        "zone": "Zone",
+        "cryotopContainer": "Cryotop Container",
+        "cryotop": "Cryotop",
+        "cryotopNo": "Cryotop 編號",
+        "cryotopColor": "Cryotop 顏色",
+        "cellCounts": "細胞數目",
+        "cryoDateTime": "冷凍日期與時間",
+        "storageDate": "入庫日期",
+        "removalDateTime": "出庫日期",
+        "embryologist": "操作者",
+        "witnessingEmbryologist": "確認者",
+        "note": "注意事項"
+      }
+    },
+    "oocyteEmbryoStorageRecord": {
+      "form": {
+        "oocyteEmbryoStorageRecord": "卵胚 Tank 入庫紀錄",
+        "selectCryotop": {
+          "selectCryotop": "選擇 Cryotop",
+          "select": "選擇",
+          "cryotopNo": "Cryotop 編號",
+          "cryotopColor": "Cryotop 顏色",
+          "cellCounts": "細胞數目",
+          "cryoDateTime": "冷凍日期與時間"
+        },
+        "occupiedLocation": {
+          "occupiedLocation": "已冷凍位置",
+          "oocyteEmbryoTank": "卵胚 Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container",
+          "cryotop": "Cryotop",
+          "cryotopNo": "Cryotop 編號",
+          "cryotopColor": "Cryotop 顏色",
+          "storageDate": "入庫日期"
+        },
+        "suggestedLocation": {
+          "suggestedLocation": "建議位置",
+          "oocyteEmbryoTank": "卵胚 Tank",
+          "floor": "Floor",
+          "zone": "Zone",
+          "cryotopContainer": "Cryotop Container"
+        },
+        "storageDateTime": "入庫日期與時間",
+        "embryologist": "操作者",
+        "oocyteEmbryoTank": "卵胚 Tank",
+        "note": "注意事項"
+      }
+    },
+    "oocyteEmbryoTank": {
+      "oocyteEmbryoTank": "卵胚 Tank",
+      "oocyteNo": "卵子 NO",
+      "embryoNo": "胚胎 NO",
+      "isImportedFromOtherInstitution": "外院移入",
+      "day": "Day (最新)",
+      "classification": "發育分類 (最新)"
+    },
+    "oocyteEmbryoThawingRecord": {
+      "form": {
+        "oocyteEmbryoThawingRecord": "卵胚解凍紀錄",
+        "selectCryotop": "選擇 Cryotop",
+        "cryotopNo": "Cryotop 編號",
+        "cryotopColor": "Cryotop 顏色",
+        "cellCounts": "細胞數目",
+        "cryoDateTime": "冷凍日期與時間",
+        "removalDate": "出庫日期",
+        "thawingDateTime": "解凍日期",
+        "embryologist": "操作者",
+        "witnessingEmbryologist": "確認者",
+        "note": "注意事項"
+      }
+    }
+  }
+}
