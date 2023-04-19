@@ -2,14 +2,17 @@ class I18nManager {
   constructor() {
     this.currentLang = "en";
     this.translations = {};
+    this.loadTranslations();
   }
 
-  async loadTranslations() {
-    const enTranslationsPromise = fetch("en-US.json").then(response => response.json());
-    const zhTranslationsPromise = fetch("zh-TW.json").then(response => response.json());
-    const [enTranslations, zhTranslations] = await Promise.all([enTranslationsPromise, zhTranslationsPromise]);
-    this.translations.en = enTranslations;
-    this.translations.zh = zhTranslations;
+  loadTranslations() {
+    const enTranslationsPromise = fetch("en.json").then(response => response.json());
+    const zhTranslationsPromise = fetch("zh.json").then(response => response.json());
+    Promise.all([enTranslationsPromise, zhTranslationsPromise]).then(([enTranslations, zhTranslations]) => {
+      this.translations.en = enTranslations;
+      this.translations.zh = zhTranslations;
+      this.renderTranslations();
+    });
   }
 
   saveTranslation(key, value) {
@@ -18,11 +21,14 @@ class I18nManager {
   }
 
   getCurrentTranslations() {
-    return this.translations[this.currentLang];
+    const translationsString = localStorage.getItem("translations");
+    const translations = JSON.parse(translationsString) || {};
+    return translations[this.currentLang] || {};
   }
 
   getTranslation(key) {
-    return this.translations[this.currentLang][key] || "";
+    const translation = this.getCurrentTranslations()[key];
+    return typeof translation === "undefined" ? "" : translation;
   }
 
   setCurrentLang(lang) {
@@ -62,9 +68,6 @@ class I18nManager {
 }
 
 const i18nManager = new I18nManager();
-i18nManager.loadTranslations().then(() => {
-  i18nManager.renderTranslations();
-});
 
 document.getElementById("en-link").addEventListener("click", () => {
   i18nManager.setCurrentLang("en");
